@@ -3,7 +3,6 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model frontend\models\ProfileUpdateForm */
 
-
 use yii\helpers\Html;
 use kartik\form\ActiveForm;
 //use yii\captcha\Captcha;
@@ -27,26 +26,15 @@ $this->params['breadcrumbs'][] = $this->title;
                 ]
             ]);
             ?>
-            <div class="row">
-            <!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <?php //$form->field($model, 'username') ?>
-                <?= $form->field($model, 'email')->textInput(['placeholder' => 'email']) ?>
-                <?php// $form->field($model, 'password')->passwordInput() ?>
-                <?php// $form->field($model, 'repeatpass')->passwordInput() ?>
-
-                <?php /* $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-                    'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-                ]) */
-                  //$form->field($model, 'allow_to_save')->checkbox() ?>
-            </div>-->
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <?php // $form->field($model, 'in_code')->label()?>
-                <?php // $form->field($model, 'surname')->widget(MaskedInput::className(), ['mask' => 'Aa{1,50}'])->textInput(['placeholder' => 'Фамилия']) ?>
-                <?php // $form->field($model, 'name')->widget(MaskedInput::className(), ['mask' => 'Aa{1,50}'])->textInput(['placeholder' => 'Имя']) ?>
-                <?php // $form->field($model, 'patronymic')->widget(MaskedInput::className(), ['mask' => 'Aa{1,50}'])->textInput(['placeholder' => 'Отчество']) ?>
-                <?php // $form->field($model, 'phone')->widget(MaskedInput::className(), ['mask' => '+38(999)999-99-99'])->textInput() ?>
-                <?php // $form->field($model, 'post_index')->widget(MaskedInput::className(), ['mask' => '99999'])->textInput() ?>
-                <?php // $form->field($model, 'address')->textarea(['rows'=> '4'])?>
+                <?=$form->field($model, 'email')?>
+                <?=$form->field($model, 'in_code')->textInput(['placeholder' => 'Внутренний код'])?>
+                <?=$form->field($model, 'surname')->widget(MaskedInput::className(), ['mask' => 'Aa{1,50}'])->textInput(['placeholder' => 'Фамилия']) ?>
+                <?=$form->field($model, 'name')->widget(MaskedInput::className(), ['mask' => 'Aa{1,50}'])->textInput(['placeholder' => 'Имя']) ?>
+                <?=$form->field($model, 'patronymic')->widget(MaskedInput::className(), ['mask' => 'Aa{1,50}'])->textInput(['placeholder' => 'Отчество']) ?>
+                <?=$form->field($model, 'phone')->widget(MaskedInput::className(), ['mask' => '+38(999)999-99-99'])->textInput() ?>
+                <?=$form->field($model, 'post_index')->widget(MaskedInput::className(), ['mask' => '99999'])->textInput() ?>
+                <?=$form->field($model, 'address')->textarea(['rows'=> '4'])?>
             </div>
             </div>
 
