@@ -8,7 +8,7 @@ use yii;
 /**
  * UserUpdate form
  */
-class ProfileupdateForm extends Model
+class ProfileUpdateForm extends Model
 {
     public $email;
 
