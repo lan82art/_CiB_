@@ -1,0 +1,109 @@
+.wrap > .container {
+    padding: 10px 0 0 0;
+    /*   padding: 70px 15px 20px;*/
+}
+
+#cart{
+    font-size: 2.5em;
+    color: #990099;
+}
+#itemsincart {
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+}
+
+#cart, #itemsincart, #totalprice{
+        cursor: pointer;
+}
+.badge {
+    background-color: #990099;
+}
+#foot{
+    height: 80%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -250px;
+    padding: 0 0 250px;
+}
+
+.footer {
+    height: 250px;
+    color: white;
+    /*background-color: #f5f5f5;*/
+    background-color:  #990099;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.navbar-inverse {
+    background-color: #990099;
+    border-color: #990099;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus
+{
+    color: #fa5221;
+    background-color: #ffffff;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #ffffff;
+    background-color: #990099;
+}
+.kv-sidenav .active>ul {
+    background-color: #ffffff;
+}
+a {
+    color: #990099;
+    text-decoration: none;
+}
+.panel {
+    border-radius: 0px;
+}
+.pagination{
+    border-radius: 0px;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span, .pagination>li:last-child>a, .pagination>li:last-child>span {
+    color: #990099;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.pagination>li>a, .pagination>li>span {
+    border: 1px solid #990099;
+    color: #990099;
+}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    color: #fff;
+    background-color: #990099;
+    border-color: #990099;
+}
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+    color: #777;
+    background-color: #fff;
+    border-color: #990099;
+    cursor: not-allowed;
+}
+.kv-sidenav > li > ul >li > a:hover, .kv-sidenav > li > a:hover, .kv-sidenav > li > a:focus {
+    background-color:#990099;
+    color: #ffffff;
+}
+.btn {
+    border-radius: 0;
+}
