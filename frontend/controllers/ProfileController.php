@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use common\models\User;
 use frontend\models\ProfileUpdateForm;
+use frontend\models\PasswordChangeForm;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii;
@@ -58,8 +59,6 @@ class ProfileController extends Controller
             ]);
         }
     }
-        
-
     /**
      * @return User the loaded model
      */
