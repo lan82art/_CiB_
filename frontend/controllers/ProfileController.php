@@ -38,6 +38,7 @@ class ProfileController extends Controller
         $model = new ProfileUpdateForm($user);
 
         if ($model->load(Yii::$app->request->post()) && $model->update()) {
+            Yii::$app->session->setFlash('success', 'Данные успешно изменены.');
             return $this->redirect(['index']);
         } else {
             return $this->render('update', [
@@ -52,6 +53,7 @@ class ProfileController extends Controller
         $model = new PasswordChangeForm($user);
 
         if ($model->load(Yii::$app->request->post()) && $model->changePassword()) {
+            Yii::$app->session->setFlash('success', 'Пароль успешно изменен.');
             return $this->redirect(['index']);
         } else {
             return $this->render('passwordChange', [
