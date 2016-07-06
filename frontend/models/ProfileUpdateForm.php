@@ -20,7 +20,7 @@ class ProfileupdateForm extends Model
     public $post_index;
     public $address;
     */
-    private $_user;
+    /*private $_user;
 
     public function __construct(User $user, $config = [])
     {
@@ -32,7 +32,7 @@ class ProfileupdateForm extends Model
     {
         $this->email = $this->_user->email;
         parent::init();
-    }
+    }*/
 
     public function rules()
     {
