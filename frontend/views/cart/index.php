@@ -73,7 +73,7 @@ use \yii\helpers\Html;
                 echo Html::a('Войти', ['site/login'], ['class' => 'btn btn-danger','style' => 'margin-bottom:5px;']);
                 echo Html::a('Зарегистрироваться', ['site/signup'], ['class' => 'btn btn-danger']);
             }
-            else {
+            elseif (Yii::$app->cart->getCost() >= 100){
                 echo Html::a('Заказать', ['cart/order'], ['class' => 'btn btn-success']);
             }
             ?>

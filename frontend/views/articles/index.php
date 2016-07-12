@@ -6,7 +6,7 @@ use kartik\sidenav\SideNav;
 //use yii\helpers\Url;
 
 /* @var $this yii\web\View */
-$title = $category === null ? 'Статьи' : $category->title;
+//$title = $category === null ? 'Статьи' : $category->title;
 $this->title = Html::encode($title);
 ?>
 <div class="container">
@@ -29,7 +29,7 @@ $this->title = Html::encode($title);
             <?= Html::encode($title) ?>
             <?= ListView::widget([
                 'dataProvider' => $articlesDataProvider,
-                'layout' => '{summary}{pager}{items}{pager}',
+                'layout' => '{pager}{items}{pager}',
                 'itemView' => '_article',
             ]) ?>
         </div>

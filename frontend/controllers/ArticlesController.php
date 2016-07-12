@@ -23,9 +23,9 @@ class ArticlesController extends \yii\web\Controller
         /** @var articlesCategory $category */
         $category = null;
 
-        $categories = ArticlesCategory::find()->indexBy('id')->orderBy('id desc')->all();
+        $categories = ArticlesCategory::find()->indexBy('id')->all();
 
-        $articlesQuery = Articles::find();
+        $articlesQuery = Articles::find()->orderBy('id desc');
         if ($id !== null && isset($categories[$id])) {
             $category = $categories[$id];
             $articlesQuery->where(['art_cat_id' => $this->getCategoryIds($categories, $id)]);
