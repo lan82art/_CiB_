@@ -74,7 +74,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => '<span class="glyphicon glyphicon-user"></span> Здравствуйте: '.Yii::$app->user->identity->username,
             'items' => [
                 ['label' => 'Профиль', 'url' => ['/profile/index']],
-                ['label' => 'Мои заказы', 'url' => ['/site/orderhistory']],
+                ['label' => 'Мои заказы', 'url' => ['/vieworder/index/']],
                 ['label' => 'Выход', 'url' => ['/site/logout'], 'linkOptions' => ['data-method' => 'post']]
             ]
         ];
