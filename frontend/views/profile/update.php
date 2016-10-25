@@ -5,6 +5,7 @@
 
 use yii\helpers\Html;
 use kartik\form\ActiveForm;
+use kartik\date\DatePicker;
 //use yii\captcha\Captcha;
 use yii\widgets\MaskedInput;
 
@@ -33,6 +34,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?=$form->field($model, 'name')->widget(MaskedInput::className(), ['mask' => 'Aa{1,50}'])->textInput(['placeholder' => 'Имя']) ?>
                 <?=$form->field($model, 'patronymic')->widget(MaskedInput::className(), ['mask' => 'Aa{1,50}'])->textInput(['placeholder' => 'Отчество']) ?>
                 <?=$form->field($model, 'phone')->widget(MaskedInput::className(), ['mask' => '+38(999)999-99-99'])->textInput() ?>
+                <?=$form->field($model, 'birthday')->widget(DatePicker::classname(), [
+                    'language' => 'ru',
+                    'pluginOptions' => [
+                        'format' => 'dd-mm-yyyy',]
+                ]) ?>
                 <?=$form->field($model, 'post_index')->widget(MaskedInput::className(), ['mask' => '99999'])->textInput() ?>
                 <?=$form->field($model, 'address')->textarea(['rows'=> '4'])?>
             </div>

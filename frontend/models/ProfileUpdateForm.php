@@ -95,6 +95,7 @@ class ProfileUpdateForm extends Model
             'patronymic' => 'Отчество',
             'phone' => 'Телефон',
             'address' => 'Адресс',
+            'birthday' => 'День рождения',
             'post_index' => 'Почтовый индекс',
         ];
     }

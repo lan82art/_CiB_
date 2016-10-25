@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use common\models\Order;
 use common\models\User;
 use frontend\models\ViewOrder;
 use yii\filters\AccessControl;
@@ -26,15 +27,19 @@ class VieworderController extends Controller
 
     public function actionIndex()
     {
-        $user_id = $this->findModel()->id;
+        $user = $this->findModel();
+        $user_id = $user->id;
          
         return $this->render('index', [
-            'model' => $this->findModel(),
-            'id' => $user_id
+            'model' => $this->findOrders($user_id),
         ]);
     }
     private function findModel()
     {
         return User::findOne(Yii::$app->user->identity->getId());
+    }
+    private  function findOrders($user_id)
+    {
+        return Order::find()->where('user_id ='.$user_id)->all();
     }
 }

@@ -25,6 +25,9 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 
 <div class="wrap">
+    <div class="container" style="border: solid; border-color: #990099; border-width: 1px; text-align: center;">
+        <p><h4>некоторый контент</h4></p>
+    </div>
     <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">

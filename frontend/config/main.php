@@ -26,7 +26,7 @@ return [
         'assetManager' => [
             'bundles' => [
                 'kartik\sidenav\SideNavAsset' => [
-                    'js'=>['js\sidenav_art.js']
+                    'js'=>['\js\sidenav_art.js']
                 ],
             ],
         ],

@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'phone',
             'address',
             'post_index',
-            'birthday',
+            'birthday:date',
         ],
     ]) ?>
 

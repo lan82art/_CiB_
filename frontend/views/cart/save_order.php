@@ -1,5 +1,4 @@
 <?php
-
 use \yii\helpers\Html;
 use \yii\bootstrap\ActiveForm;
 use \yii\helpers\ArrayHelper;
@@ -7,15 +6,15 @@ use \yii\helpers\ArrayHelper;
 /* @var $this yii\web\View */
 /* @var $products common\models\Goods[] */
 ?>
-<h1>Your order</h1>
+<h1>Ваше замовлення</h1>
 
 <div class="container">
-    <div class="row" style="background-color: #990099; color: white; font-weight: bold; font-family: 'Open Sans';padding: 10px;;">
+    <div class="row" style="background-color: #990099; color: white; font-weight: bold; font-family: 'Open Sans';padding: 10px;">
         <div class="col-xs-4">
             Наименование
         </div>
         <div class="col-xs-1">
-            Шото
+            Код
         </div>
         <div class="col-xs-2">
             Цена
@@ -38,7 +37,7 @@ use \yii\helpers\ArrayHelper;
             <?= Html::encode($product->title) ?>
         </div>
         <div class="col-xs-1">
-            Шото
+            <?= Html::encode($product->code) ?>
         </div>
         <div class="col-xs-2">
             <?= Yii::$app->formatter->asCurrency($product->price) ?>
@@ -80,7 +79,6 @@ use \yii\helpers\ArrayHelper;
             $form = ActiveForm::begin([
                 'id' => 'order-form',
             ]) ?>
-
             <?= $form->field($order, 'delivery')->dropDownList(ArrayHelper::map(\common\models\Delivery::find()->all(),'id','delivery_name'),['prompt'=>'Выберите доставку']) ?>
             <?= $form->field($order, 'notes')->textarea()?>
 
