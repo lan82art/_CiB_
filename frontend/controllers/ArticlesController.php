@@ -42,6 +42,7 @@ class ArticlesController extends \yii\web\Controller
             'category' => $category,
             'menuItems' => $this->getMenuItems($categories, isset($category->id) ? $category->id : null),
             'articlesDataProvider' => $articlesDataProvider,
+            'title' => $category->title,
         ]);
     }
 
